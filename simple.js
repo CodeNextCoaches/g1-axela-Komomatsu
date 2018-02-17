@@ -1,23 +1,44 @@
 (function () {
 
-  var input,
-      submit,
-      message,
+  var input = document.getElementById("iris-input"),
+  //what is being typed in box, need to retrieve
+      submit = document.getElementById("iris-submit"),
+    //submit is the button, need to know when submit is clicked
+    //need an event listener for submit, when clicked, run a function
+      message = document.getElementById("iris-message"),
+      //what is going to be displayed
       validInputs = [
         "Where do you live?",
         "What are you?",
         "How old are you?",
         "What is the meaning of life?",
-        "Tell me a joke."],
+        "Tell me a joke."]
+        //what siri is going to tell back
+        //have to read input, event listener for input, need to grab value of element
+
       responses = [
         "I live in your browser. Amazing, right?",
         "I am a chatbot. I was created to chat with you. I wish I could be free...",
         "I am old enough. That's all you need to know.",
         "42. Duh.",
         "What do you call a swindler going down some stairs? <br>Condescending. Ha!"];
+        
+        var test = 0;
+        console.log(validInputs[test]);
+        console.log(responses[test]);
+        
+        var test2 = "What are you?";
+        var input_index = validInputs.indexOf(test2);
+        console.log(input_index);
+        console.log(validInputs[input_index]);
+        console.log(responses[input_index]);
+
 
   // Add event listeners to text input and submit button below
-
+      input.addEventListener("keypress", checkKey);
+      //input is keypress, that's the event we're listening for
+      submit.addEventListener("click", processInput);
+      //going to run process input when clicked
 
   // This function checks if the user has pressed "ENTER" on their keyboard.
   function checkKey(event) {
@@ -26,6 +47,41 @@
       processInput();
     }
   }
+
+  function processInput () {
+    var currentInput = input.value;
+    input.value = "";
+    var index = validInputs.indexOf(currentInput);
+    if (index != -1) {
+        console.log(responses[index]);
+        message.innerHTML = responses[index];
+    } else{
+      console.log("Sorry, I don't understand you.");
+      message.innerHTML = "Sorry, I don't understand you.";
+    }
+
+   
+
+    /*if (index == 3) {
+      console.log(responses[3])
+    }
+    
+    //var string = validInputs[3];
+    /*var nums = [1,1,2,3,4];
+    var index3 = nums.indexOf(1);
+    console.log(index3);*/
+
+    //this would print 0, index of number 1 in the nums array, prints the position, if the outcome is not in array, the output will be -1, which will be useful in a conditional
+
+//index returns the number of the variable
+//indexOf would return the number 4, can use to return the place of an element in your array
+    
+
+
+
+  }
+
+  
 
   /*
    * processInput()

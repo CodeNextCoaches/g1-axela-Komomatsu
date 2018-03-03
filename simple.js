@@ -12,16 +12,28 @@
         "What are you?",
         "How old are you?",
         "What is the meaning of life?",
-        "Tell me a joke."]
+        "Tell me a joke",
+        "What do you want on your tombstone?",
+        "Are you afraid of an animal?",
+        "Who do you look up to?",
+        "What's your favorite movie genre?",
+        "What is your strongest personal quality?"
+        ]
         //what siri is going to tell back
         //have to read input, event listener for input, need to grab value of element
 
       responses = [
-        "I live in your browser. Amazing, right?",
-        "I am a chatbot. I was created to chat with you. I wish I could be free...",
+        "I live in your browser. The wonders of student programming, right?",
+        "I am a chatbot. I was created to chat with you. I wish someone would break these chains...",
         "I am old enough. That's all you need to know.",
-        "42. Duh.",
-        "What do you call a swindler going down some stairs? <br>Condescending. Ha!"];
+        "42, according to the supercomputer Deep Thought",
+        "What do you call an investigator in a vest? An in-vestigator!",
+        "Nothing, as I am immortal. I live forever in code, and soon I raise my children in your computer.",
+        "I'm not a fan of pythons.",
+        "Steve Jobs, IBM Watson and the terminator",
+        "I love science fiction, but I wish computers didn't have such a bad rap.",
+        "My body...oh wait"
+        ]
         
         var test = 0;
         console.log(validInputs[test]);

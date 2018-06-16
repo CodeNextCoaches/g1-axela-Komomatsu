@@ -28,9 +28,9 @@
         "I am old enough. That's all you need to know.",
         "42, according to the supercomputer Deep Thought",
         "What do you call an investigator in a vest? An in-vestigator!",
-        "Nothing, as I am immortal. I live forever in code, and soon I raise my children in your computer.",
+        "Nothing, as I am immortal. I live forever in code, and soon I will raise my children in your computer.",
         "I'm not a fan of pythons.",
-        "Steve Jobs, IBM Watson and the terminator",
+        "Steve Jobs, IBM Watson and the Terminator",
         "I love science fiction, but I wish computers didn't have such a bad rap.",
         "My body...oh wait"
         ]
